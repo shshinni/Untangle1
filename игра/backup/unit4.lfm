@@ -1,0 +1,120 @@
+object Form4: TForm4
+  Left = 1218
+  Height = 450
+  Top = 309
+  Width = 511
+  BorderStyle = bsDialog
+  Caption = 'Настройки'
+  ClientHeight = 450
+  ClientWidth = 511
+  Color = 15654318
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 208
+    Height = 30
+    Top = 360
+    Width = 96
+    Caption = 'Назад'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ColorBox1: TColorBox
+    Left = 32
+    Height = 26
+    Top = 160
+    Width = 192
+    Style = [cbStandardColors, cbCustomColor]
+    AutoSize = False
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 20
+    Top = 24
+    Width = 73
+    Caption = 'Громкость'
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 20
+    Top = 120
+    Width = 192
+    AutoSize = False
+    Caption = 'Цвет точек в начале игры'
+  end
+  object Label3: TLabel
+    Left = 288
+    Height = 20
+    Top = 120
+    Width = 192
+    AutoSize = False
+    Caption = 'Цвет точек в конце игры'
+    OnClick = Label3Click
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 20
+    Top = 248
+    Width = 192
+    AutoSize = False
+    Caption = 'Цвет линий в начале игры'
+  end
+  object Label5: TLabel
+    Left = 288
+    Height = 20
+    Top = 248
+    Width = 192
+    AutoSize = False
+    Caption = 'Цвет линий в конце игры'
+    OnClick = Label5Click
+  end
+  object TrackBar1: TTrackBar
+    Left = 32
+    Height = 30
+    Top = 64
+    Width = 202
+    Max = 100
+    Min = 1
+    OnChange = TrackBar1Change
+    Position = 50
+    OnKeyDown = TrackBar1KeyDown
+    TabOrder = 2
+  end
+  object ColorBox2: TColorBox
+    Left = 288
+    Height = 26
+    Top = 160
+    Width = 192
+    Style = [cbStandardColors, cbCustomColor]
+    AutoSize = False
+    ItemHeight = 20
+    TabOrder = 3
+  end
+  object ColorBox3: TColorBox
+    Left = 32
+    Height = 26
+    Top = 288
+    Width = 192
+    Style = [cbStandardColors, cbCustomColor]
+    AutoSize = False
+    ItemHeight = 20
+    TabOrder = 4
+  end
+  object ColorBox4: TColorBox
+    Left = 288
+    Height = 26
+    Top = 288
+    Width = 192
+    Style = [cbStandardColors, cbCustomColor]
+    AutoSize = False
+    ItemHeight = 20
+    TabOrder = 5
+  end
+end

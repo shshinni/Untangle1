@@ -1,0 +1,55 @@
+object Form3: TForm3
+  Left = 968
+  Height = 328
+  Top = 233
+  Width = 414
+  BorderStyle = bsDialog
+  Caption = 'Информация'
+  ClientHeight = 328
+  ClientWidth = 414
+  Color = 16684243
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 16
+    Height = 256
+    Top = 8
+    Width = 384
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Label1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Sitka Small'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    WordWrap = True
+    OnClick = Label1Click
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 159
+    Height = 30
+    Top = 280
+    Width = 96
+    Anchors = [akLeft]
+    BorderSpacing.Bottom = 100
+    Caption = 'Назад'
+    Color = 16626660
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end
